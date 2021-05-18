@@ -45,6 +45,7 @@ var strStr = function(haystack, needle) {
       arr[0] = -1;
       let k = -1;
       for (let i = 1; i < str.length; i++) {
+        // 重置 k
         while (k !== -1 && str[k + 1] !== str[i]) {
           k = arr[k]
         }
